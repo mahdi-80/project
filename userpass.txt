@@ -1,0 +1,4 @@
+Database:	h314287_MahdiDB
+Host:	localhost
+Username:	h314287_schoolshopDB
+Password:	Z8bFzTjR

@@ -1,0 +1,18 @@
+$o=mysqli_connect("localhost","root","","ice-shop");
+$r=mysqli_query($o,"SELECT username FROM `login` 
+WHERE username = '$username'");
+        
+mysqli_close($o);
+
+$row=mysqli_fetch_array($r);
+
+if($row==true)
+{
+?>
+<script>
+location.replace("rig.html");
+alert ("نام کاربری قبلا انتخاب شده");
+</script>
+
+<?php
+}

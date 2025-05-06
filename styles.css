@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* رنگ پس‌زمینه ملایم */
+}
+
+header {
+    background-color: #007bff; /* رنگ آبی */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #005fa3;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+nav a:hover {
+    background-color: #1976d2; /* رنگ تیره‌تر */
+    transform: scale(1.1); /* افزایش اندازه */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه */
+}
+
+main {
+    padding: 20px;
+}
+
+#best-sellers {
+    margin-top: 20px;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* فاصله یکنواخت بین کالاها */
+}
+
+.product {
+    border-radius: 10px; /* گوشه‌های گرد */
+    border: 1px solid #ced4da; /* رنگ مرز ملایم */
+    padding: 20px;
+    margin-bottom: 30px; /* فاصله بین ردیف‌ها */
+    width: calc(23% - 20px); /* چهار محصول در هر ردیف با فاصله */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white; /* رنگ پس‌زمینه کالا */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* حرکت به بالا هنگام هاور */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product h3 {
+    margin: 10px 0; /* فاصله بین عنوان و محتوا */
+}
+
+.product button {
+    background-color: #28a745; /* رنگ سبز */
+    color: white;
+    border: none;
+    border-radius: 5px; /* گوشه‌های گرد */
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* انیمیشن تغییر رنگ */
+}
+
+.product button:hover {
+    background-color: #218838; /* رنگ سبز تیره‌تر */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #02385f; /* رنگ ملایم فوتر */
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product {
+        width: calc(48% - 10px); /* دو محصول در هر ردیف */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%; /* یک محصول در هر ردیف */
+    }
+}
+h2{
+    text-align: center;
+}
+img {
+    width: 50%; /* یا می‌توانید مقدار پیکسل مشخص کنید */
+    height: auto; /* برای حفظ نسبت ابعاد */
+}
+
+/* ------------------------------------------------------------ */
+
+/* تغییر رنگ نوار ناوبری */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تغییر رنگ دکمه همبرگر در حالت موبایل */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* تغییر رنگ آیتم‌های منو هنگام هاور */
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* رنگ سفارشی برای نوار ناوبری */
+.navbar-custom {
+    background-color: #024b99 !important; /* رنگ مشکی-آبی تیره */
+}
+
